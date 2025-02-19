@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina con Link Generati da JavaScript</title>
+</head>
+<body>
+    <h1>Link Generati da JavaScript</h1>
+    <div id="linkContainer"></div>
+    <a href="https://example.com">Link non javascript</a>
+
+    <script>
+        // Array di oggetti link
+        const links = [
+            { text: "Google", url: "https://www.google.com" },
+            { text: "YouTube", url: "https://www.youtube.com" },
+            { text: "Wikipedia", url: "https://www.wikipedia.org" }
+        ];
+
+        // Riferimento al contenitore dei link
+        const linkContainer = document.getElementById("linkContainer");
+
+        // Funzione per creare e aggiungere i link
+        links.forEach(link => {
+            const anchor = document.createElement("a");
+            anchor.href = link.url;
+            anchor.textContent = link.text;
+            anchor.target = "_blank"; // Apre il link in una nuova scheda
+            linkContainer.appendChild(anchor);
+            linkContainer.appendChild(document.createElement("br")); // Aggiunge una linea di interruzione
+        });
+    </script>
+</body>
+</html>

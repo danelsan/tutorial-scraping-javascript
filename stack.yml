@@ -1,0 +1,15 @@
+version: '3.9'
+
+networks:
+  net_link:
+    external: true
+
+services:
+  web:
+    image: nginx:latest
+    volumes:
+      - $PWD/html:/usr/share/nginx/html
+    ports:
+      - "8888:80"
+    networks:
+      - net_link
