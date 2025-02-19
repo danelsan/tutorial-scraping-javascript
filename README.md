@@ -26,48 +26,6 @@ This will start the Nginx web server and the scraping script inside a Docker con
 
 This tutorial demonstrates how to use Selenium and Docker for scraping a web page that uses JavaScript. Selenium enables us to effectively interact with dynamic web pages, while Docker ensures that our environment is isolated and reproducible.
 
-
-## Usage
-
-### Start Services and Run the Scraping Script
-
-1. **Build the Docker image and start the services**:
-    ```sh
-    make run-js
-    ```
-
-2. **Run the scraping script**:
-    ```sh
-    make scraper
-    ```
-
-This will start the Nginx web server and the scraping script inside a Docker container, extracting the links from the specified web page.
-
-## Conclusion
-
-This tutorial demonstrates how to use Selenium and Docker for scraping a web page that uses JavaScript. Selenium enables us to effectively interact with dynamic web pages, while Docker ensures that our environment is isolated and reproducible.
-
-For more details, you can refer to the tutorial in  [News Technology](h
-## Usage
-
-### Start Services and Run the Scraping Script
-
-1. **Build the Docker image and start the services**:
-    ```sh
-    make run-js
-    ```
-
-2. **Run the scraping script**:
-    ```sh
-    make scraper
-    ```
-
-This will start the Nginx web server and the scraping script inside a Docker container, extracting the links from the specified web page.
-
-## Conclusion
-
-This tutorial demonstrates how to use Selenium and Docker for scraping a web page that uses JavaScript. Selenium enables us to effectively interact with dynamic web pages, while Docker ensures that our environment is isolated and reproducible.
-
 For more details, you can refer to the tutorial [ News Technology ](https://www.newstechnology.eu/it/programmazione/scraping-links-di-pagine-javascript-con-selenium.html).
 
 Happy scraping!
